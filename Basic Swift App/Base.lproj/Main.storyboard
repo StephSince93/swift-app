@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -52,27 +52,51 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3vB-8F-NcZ">
+                                <rect key="frame" x="152" y="333" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="7Y3-CC-Pa7"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E2a-vO-NmR">
+                                <rect key="frame" x="152" y="228" width="71" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="nMl-F6-lzo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="3vB-8F-NcZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="38C-jw-XvN"/>
                             <constraint firstItem="YwT-oJ-73o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5lh-7E-2hW"/>
+                            <constraint firstItem="E2a-vO-NmR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ehy-gI-xml"/>
                             <constraint firstItem="YVW-Jm-Zrf" firstAttribute="top" secondItem="lBN-2b-5sF" secondAttribute="bottom" constant="50" id="Hbe-BS-oBd"/>
                             <constraint firstItem="Swe-ws-FtO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="75" id="J7h-tr-8Gk"/>
                             <constraint firstItem="YwT-oJ-73o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="WMf-p8-fSU"/>
                             <constraint firstItem="YVW-Jm-Zrf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wie-bK-kxZ"/>
                             <constraint firstItem="YwT-oJ-73o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Xg9-m4-0Za"/>
                             <constraint firstItem="YwT-oJ-73o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bfw-e3-o7Z"/>
+                            <constraint firstItem="3vB-8F-NcZ" firstAttribute="top" secondItem="lBN-2b-5sF" secondAttribute="bottom" constant="272.5" id="ewH-F2-6tQ"/>
                             <constraint firstItem="YwT-oJ-73o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m7n-v7-DPK"/>
                             <constraint firstItem="Swe-ws-FtO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oFM-J2-3fB"/>
+                            <constraint firstItem="3vB-8F-NcZ" firstAttribute="top" secondItem="E2a-vO-NmR" secondAttribute="bottom" constant="75" id="va9-bt-WUI"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="textVar1" destination="E2a-vO-NmR" id="jSK-rh-soI"/>
+                        <outlet property="textVar2" destination="3vB-8F-NcZ" id="otf-j5-hiq"/>
                         <outlet property="theLabel" destination="lBN-2b-5sF" id="GYr-vz-NFL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="18"/>
+            <point key="canvasLocation" x="252" y="-202.84857571214394"/>
         </scene>
     </scenes>
 </document>
