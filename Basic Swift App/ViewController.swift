@@ -30,7 +30,10 @@ class ViewController: UIViewController {
     //another action button
     @IBAction func extraButton(_ sender: Any) {
         
-        theLabel.text = "We for sure made it!"
+        //type casting
+     //   theLabel.text = String(Double(textVar1.text!)! + Double(textVar2.text!)!)
+        //string interpolation
+        theLabel.text = "Answer is: \(Double(textVar1.text!)! + Double(textVar2.text!)!)"
     }
     
     
