@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     //Label that was added to the screen
     @IBOutlet weak var theLabel: UILabel!
     
@@ -26,14 +26,25 @@ class ViewController: UIViewController {
         print(textVar2.text!)
         
         
+        
     }
     //another action button
     @IBAction func extraButton(_ sender: Any) {
         
         //type casting
-     //   theLabel.text = String(Double(textVar1.text!)! + Double(textVar2.text!)!)
+        //   theLabel.text = String(Double(textVar1.text!)! + Double(textVar2.text!)!)
         //string interpolation
-        theLabel.text = "Answer is: \(Double(textVar1.text!)! + Double(textVar2.text!)!)"
+        
+        var addition :Bool = false
+        
+        if addition{
+            
+            theLabel.text = "Answer is: \(Double(textVar1.text!)! + Double(textVar2.text!)!)"
+        }
+        else
+        {
+            theLabel.text = "Answer is: \(Double(textVar1.text!)! - Double(textVar2.text!)!)"
+        }
     }
     
     
@@ -46,12 +57,12 @@ class ViewController: UIViewController {
         //changes the text of the label on the screen
         theLabel.text = "We made it!"
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
